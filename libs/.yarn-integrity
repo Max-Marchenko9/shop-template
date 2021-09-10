@@ -1,0 +1,22 @@
+{
+  "systemParams": "win32-x64-64",
+  "modulesFolders": [
+    "libs"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "@fortawesome/fontawesome-free@^5.4.2",
+    "bootstrap@^4.1.3",
+    "jquery@^3.3.1",
+    "popper.js@^1.14.4"
+  ],
+  "lockfileEntries": {
+    "@fortawesome/fontawesome-free@^5.4.2": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.1.tgz#cbafbfe8894c4e3e3c3a9da6774e249ac1f2da8b",
+    "bootstrap@^4.1.3": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac",
+    "jquery@^3.3.1": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.0.tgz#8de513fa0fa4b2c7d2e48a530e26f0596936efdf",
+    "popper.js@^1.14.4": "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2"
+  },
+  "files": [],
+  "artifacts": {}
+}

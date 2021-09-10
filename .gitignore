@@ -1,0 +1,14 @@
+temp/
+*.bat
+
+# IntellijIdea files
+.idea/
+*/scss-comb/
+node_modules
+.csscomb.json
+.yarnrc
+gulpfile.js
+package-lock.json
+package.json
+yarn-error.log
+yarn.lock
