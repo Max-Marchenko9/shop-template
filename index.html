@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SHOP-TEMPLATE</title>
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
@@ -11,12 +12,74 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/img/icon-1.png" type="image/png">
 </head>
+
 <body>
 
+  <header class="header">
+    <div class="header__navbar">
+      <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+          <a class="navbar-logo" href="#">
+            <img src="assets/img/icon-3.png" alt="site-logo">
+          </a>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                  aria-expanded="false">
+                  Products
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Lorem ipsum dolor</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">One more separated link</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Shipping</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 page-header__navbar-search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fs-search"
+                  aria-hidden="true"></i></button>
+            </form>
+            <button class="page-header__cart-btn btn btn-outline-success my-2 my-sm-0" type="submit">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i><i><span class="page-header__cart-counter"
+                  id="cart-counter-label">0</span></i>
+            </button>
+
+          </div>
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="carousel">
+
+    </div>
+
+  </header>
+
+  <div class="container">
+
+  </div>
 
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
+
 </html>

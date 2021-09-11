@@ -1,0 +1,29 @@
+.header {
+  &__navbar {
+    background-color: rgba($color-light, 0.8);
+    
+    @media (min-width: 992px) {
+      .dropdown.show {
+        border-bottom: 1px solid $color-light;
+        background-color: $color-dark;
+
+        .dropdown-toggle {
+          color: $color-light;
+        }
+      }
+      .dropdown-menu {
+        border: none;
+        border-radius: 0;
+        background-color: $color-dark;
+
+        a {
+          color: $color-light;
+
+          &:hover {
+            color: $color-dark;
+          }
+        }
+      }
+    }
+  }
+}

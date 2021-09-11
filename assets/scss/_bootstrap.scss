@@ -1,0 +1,31 @@
+.navbar {
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.navbar-light .nav-link .navbar-nav {
+  white-space: nowrap;
+  color: $color-dark;
+  font-size: 1.2rem;
+}
+.navbar-nav {
+  @media (min-width: 992px) {
+    width: calc(100% - 300px);
+    padding-left: 30px;
+    padding-right: 70px;
+
+    > .nav-item {
+      text-align: center;
+      flex-grow: 1;
+
+      :not(.show) {
+        border-left: 1px solid $color-dark;
+      }
+
+      &:last-child {
+        border-right: 1px solid $color-dark;
+      }
+    }
+  }
+}
