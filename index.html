@@ -8,6 +8,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SHOP-TEMPLATE</title>
   <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="shortcut icon" href="assets/img/icon-1.png" type="image/png">
@@ -16,6 +19,7 @@
 <body>
 
   <header class="header">
+
     <div class="header__navbar">
       <div class="container">
 
@@ -25,10 +29,15 @@
             <img src="assets/img/icon-3.png" alt="site-logo">
           </a>
 
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -44,19 +53,19 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="#">Payment</a>
+                <a class="nav-link" href="#">Payment</a>
               </li>
               <li class="nav-item">
-                <a href="#">Shipping</a>
+                <a class="nav-link" href="#">Shipping</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 page-header__navbar-search">
               <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fs-search"
+              <button class="button-form btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"
                   aria-hidden="true"></i></button>
             </form>
-            <button class="page-header__cart-btn btn btn-outline-success my-2 my-sm-0" type="submit">
-              <i class="fas fa-shopping-cart" aria-hidden="true"></i><i><span class="page-header__cart-counter"
+            <button class="header__cart-btn btn btn-outline-success my-2 my-sm-0" type="submit">
+              <i class="fas fa-shopping-cart" aria-hidden="true"></i><i><span class="header__cart-counter"
                   id="cart-counter-label">0</span></i>
             </button>
 
@@ -66,19 +75,73 @@
       </div>
     </div>
 
-    <div class="carousel">
+    <div class="header__carousel">
+      <div class="container">
 
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/icon-12.png" class="d-block w-100" alt="какой-то слайд">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Slide #1</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/icon-14.png" class="d-block w-100" alt="какой-то слайд">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Slide #2</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/icon-15.png" class="d-block w-100" alt="какой-то слайд">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>Slide #3</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
     </div>
 
   </header>
 
-  <div class="container">
+  <div class="container wrapper">
+    <div class="row">
 
+
+      <main class="col-lg-9 order-lg-2">
+
+      </main>
+
+    </div>
   </div>
 
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/popper.js/dist/umd/popper.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
