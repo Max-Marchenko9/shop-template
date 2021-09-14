@@ -1,0 +1,60 @@
+.sidebar-filter {
+  padding: 15px 30px 30px;
+
+  color: $color-light;
+
+  @include md-min {
+    border-right: 1px solid $color-light;
+    background-color: rgba($color-light, 0.25);
+  }
+
+  @include md {
+    border-top: 1px solid $color-light;
+  }
+
+  legend {
+    font-weight: bold;
+  }
+
+  .form-check {
+    margin: 10px 0;
+
+    &-label {
+      margin-left: 0.5rem;
+
+      font-size: 1.25rem;
+    }
+
+    &-input {
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border: 1px solid $color-light;
+      border-radius: 0;
+      background-color: transparent;
+      &:focus {
+        outline: none;
+      }
+
+      &:checked {
+        background-color: $color-light;
+      }
+    }
+  }
+
+  &__more {
+    display: block;
+
+    margin-bottom: 30px;
+
+    color: $color-light;
+
+    font-size: 1.25rem;
+  }
+
+  &__submit {
+    border: 1px solid $color-light;
+    border-radius: 0;
+    background-color: $color-dark;
+  }
+}

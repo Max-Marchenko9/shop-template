@@ -4,7 +4,6 @@
 
     @include md-min {
       .dropdown.show {
-        border-bottom: 1px solid $color-light;
         background-color: $color-dark;
 
         .dropdown-toggle {
@@ -32,7 +31,7 @@
 
         flex-wrap: nowrap;
 
-        @include sm-max {
+        @include sm {
           display: inline-flex;
 
           width: calc(100% - 100px);
@@ -51,14 +50,11 @@
         @include lg-min {
           width: 12.5rem !important;
         }
-        @include sm-max {
+        @include sm {
           flex-grow: 2;
         }
       }
       button {
-        // position: absolute;
-        // top: 5px;
-        // right: 5px;
         padding: 0px;
         margin: 5px;
         color: $color-light;
@@ -77,7 +73,6 @@
     }
   }
   &__carousel {
-    // max-height: 400px;
     margin-left: 0px;
     margin-right: 0px;
     background-color: rgba(#000000, 0.3);
@@ -95,12 +90,12 @@
     height: 50px;
     margin-left: 30px;
 
-    color: $color-dark !important;
+    color: $color-dark;
     border: none;
     border-radius: 0;
-    background-color: $color-light !important;
+    background-color: $color-light;
 
-    @include sm-max {
+    @include sm {
       margin-top: -12px !important;
     }
     // &:focus,
@@ -109,10 +104,10 @@
     // }
     &:hover {
       span {
-        color: $color-light !important;
-        background-color: $color-dark !important;
+        color: $color-light;
+        background-color: $color-dark;
       }
-    }
+    } 
 
     span {
       position: absolute;
