@@ -114,6 +114,193 @@ body {
   overflow-y: scroll;
 }
 
+.breadcrumb {
+  padding: 1rem 0 0 0;
+  opacity: 0.5;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #ffffff;
+}
+
+.breadcrumb-item.active {
+  color: #ffffff;
+}
+
+.page-title__header {
+  color: #ffffff;
+  font-size: 2.85rem;
+}
+
+.page-title__form-select {
+  width: 100%;
+  margin-top: 6px;
+  padding: 3px 10px 5px;
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #2c71b6;
+  font-size: 1.25rem;
+}
+
+.page-content {
+  margin-top: 30px;
+}
+
+.item-wrapper {
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #ffffff;
+}
+
+.item-wrapper .container-fluid {
+  background-color: rgba(44, 113, 182, 0.5);
+}
+
+.item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.item-title {
+  padding-top: 0.75rem;
+  color: #ffffff;
+  font-size: 1.75rem;
+}
+
+.item-description {
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.item-characteristics {
+  margin-top: 15px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.item-characteristics span {
+  display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  color: #ffffff;
+}
+
+.item-buttons {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.item-buttons button {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.item-buttons button:last-child {
+  margin-top: 5px !important;
+}
+
+.item-price {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.item-actions {
+  padding: 15px;
+}
+
+.item-actions button {
+  margin-bottom: 30px !important;
+  padding: 8px 5px 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.item-actions button:last-child {
+  margin-bottom: 15px !important;
+}
+
+.item-actions button:hover {
+  color: #2c71b6;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.item-actions button i {
+  margin-left: 5px;
+  font-size: 1rem;
+}
+
+.item-actions__cart {
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.item-actions__cart.disabled, .item-actions__cart:disabled, .item-actions__cart.active, .item-actions__cart:active {
+  opacity: 1;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.item-actions__cart:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.load-more__link {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.load-more__link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.load-more__link a:hover {
+  text-decoration: underline;
+}
+
+.btn-outline-succes {
+  color: #2c71b6;
+  border-color: #2c71b6;
+  border-radius: 0;
+}
+
+.btn-outline-succes:hover {
+  color: #ffffff;
+  background-color: #2c71b6;
+}
+
 .sidebar-filter {
   padding: 15px 30px 30px;
   color: #ffffff;
@@ -154,12 +341,25 @@ body {
   margin-bottom: 30px;
   color: #ffffff;
   font-size: 1.25rem;
+  text-decoration: none;
 }
 
 .sidebar-filter__submit {
   border: 1px solid #ffffff;
   border-radius: 0;
   background-color: #2c71b6;
+}
+
+.page-footer {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.page-footer__copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #2c71b6;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 992px) {
@@ -250,6 +450,18 @@ body {
 @media (min-width: 992px) and (min-width: 1200px) {
   .header__navbar .form-control {
     width: 12.5rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .item-actions button {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .item-actions button {
+    font-size: 0.9rem;
   }
 }
 
