@@ -1,6 +1,6 @@
 .breadcrumb {
-  padding: 1rem 0 0 0;
-
+  padding: 1.5rem 0 0 0;
+  margin-bottom: 0.75rem;
   opacity: 0.5;
   background-color: transparent;
 
@@ -26,25 +26,28 @@
 .page-title {
   &__header {
     color: $color-light;
-
-    font-size: 2.85rem;
+    letter-spacing: 0;
+    font-size: 3rem;
+    font-weight: 600;
   }
 
   &__form-select {
     width: 100%;
-    margin-top: 6px;
-    padding: 3px 10px 5px;
+    margin-top: 7px;
+    margin-left: 3px;
+    padding: 3px 10px 5px 15px;
 
     color: $color-light;
     border-color: $color-light;
     background-color: $color-dark;
 
-    font-size: 1.25rem;
+    font-size: 1.31rem;
+    font-weight: 200;
   }
 }
 
 .page-content {
-  margin-top: 30px;
+  margin-top: 42px;
 }
 
 .item {
@@ -204,7 +207,7 @@
       color: $color-light;
       &:hover {
         //   color: $color-dark;
-          text-decoration: underline;
+        text-decoration: underline;
       }
     }
   }

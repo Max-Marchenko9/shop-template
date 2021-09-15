@@ -1,13 +1,13 @@
 .header {
   &__navbar {
     background-color: rgba($color-light, 0.8);
-
+    // color: $color-dark;
     @include md-min {
       .dropdown.show {
         background-color: $color-dark;
 
         .dropdown-toggle {
-          color: $color-light;
+          color: $color-light !important;
         }
       }
       .dropdown-menu {
@@ -46,9 +46,11 @@
         box-shadow: none;
         border-color: $color-border;
         font-size: 1.2rem;
+        padding-left: 18px;
 
         @include lg-min {
           width: 12.5rem !important;
+          height: 40px;
         }
         @include sm {
           flex-grow: 2;
@@ -68,7 +70,8 @@
       }
       i {
         display: block;
-        padding: 10px;
+        padding: 5px;
+        font-size: 0.8rem;
       }
     }
   }
@@ -86,10 +89,10 @@
 .header {
   &__cart-btn {
     position: relative;
-    width: 50px;
-    height: 50px;
-    margin-left: 30px;
-
+    width: 40px;
+    height: 40px;
+    margin-left: 22px !important;
+    
     color: $color-dark;
     border: none;
     border-radius: 0;
@@ -157,4 +160,15 @@
 .btn-outline-success:focus {
   outline: none !important;
    box-shadow: none;
+}
+.nav-link {
+  font-size: 1.33rem;
+  color: $color-dark !important;
+  // padding-left: 0px !important;
+  // padding-right: 0px !important;
+}
+.button-form {
+  height: 30px;
+  width: 30px;
+  margin-right: 14px !important;
 }
