@@ -1,5 +1,5 @@
 .sidebar-filter {
-  padding: 15px 30px 30px;
+  padding: 24px 30px 30px;
 
   color: $color-light;
 
@@ -15,20 +15,24 @@
   legend {
     font-weight: bold;
   }
-
+  &__submit {
+    height: 50px;
+  }
   .form-check {
-    margin: 10px 0;
+    margin: 9px 0;
 
     &-label {
-      margin-left: 0.5rem;
-
-      font-size: 1.25rem;
+      margin-left: -3px;
+      font-weight: lighter;
+      font-size: 1.31rem;
     }
 
     &-input {
+      margin-top: 12px;
+      margin-right: 0px;
       display: block;
-      width: 0.8rem;
-      height: 0.8rem;
+      width: 0.6rem;
+      height: 0.6rem;
       border: 1px solid $color-light;
       border-radius: 0;
       background-color: transparent;
@@ -45,11 +49,11 @@
   &__more {
     display: block;
 
-    margin-bottom: 30px;
-
+    margin-bottom: 24px;
+    margin-left: 8px;
     color: $color-light;
 
-    font-size: 1.25rem;
+    font-size: 1.31rem;
     text-decoration: none;
   }
 
@@ -57,8 +61,25 @@
     border: 1px solid $color-light;
     border-radius: 0;
     background-color: $color-dark;
+    font-size: 1.31rem;
+    font-weight: 700;
   }
 }
 .sidebar {
   padding-right: 15px;
+}
+legend {
+  font-size: 1.31rem;
+  font-weight: 500;
+  // margin-bottom: 17px;
+  // :not(:first-of-type) {
+  //   margin-top: 100px !important;
+  // }
+}
+.form-group {
+  margin-bottom: 41px;
+  // font-size: 1.4rem;
+}
+fieldset:last-of-type {
+  margin-bottom: 4px;
 }
