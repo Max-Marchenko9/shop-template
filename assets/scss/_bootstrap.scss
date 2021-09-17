@@ -6,20 +6,28 @@
 }
 .navbar-light .nav-link .navbar-nav {
   white-space: nowrap;
+
   color: $color-dark;
+
   font-size: 1.2rem;
 }
 .navbar-nav {
   @media (min-width: 992px) {
     width: calc(100% - 300px);
-    padding-left: 123px;
-    padding-right: 0px;
     margin-right: 30px !important;
+    padding-right: 0;
+    padding-left: 123px;
+
+    @include lg {
+      padding-left: 70px;
+    }
 
     > .nav-item {
-      text-align: center;
       flex-grow: 1;
+
       width: 100%;
+
+      text-align: center;
 
       :not(.show) {
         border-left: 1px solid $color-dark;
@@ -47,6 +55,7 @@
 }
 .fa-shopping-cart {
   padding-top: 11px !important;
+
   font-size: 1rem !important;
 }
 .navbar-collapse {
@@ -55,7 +64,8 @@
 .col-md-4 {
   padding: 0 15px;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: 5rem;
   height: 3.5rem;
 }

@@ -7,7 +7,6 @@
     border-right: 1px solid $color-light;
     background-color: rgba($color-light, 0.25);
   }
-
   @include md {
     border-top: 1px solid $color-light;
   }
@@ -23,16 +22,19 @@
 
     &-label {
       margin-left: -3px;
-      font-weight: lighter;
+
       font-size: 1.31rem;
+      font-weight: lighter;
     }
 
     &-input {
-      margin-top: 12px;
-      margin-right: 0px;
       display: block;
+
       width: 0.6rem;
       height: 0.6rem;
+      margin-top: 12px;
+      margin-right: 0;
+
       border: 1px solid $color-light;
       border-radius: 0;
       background-color: transparent;
@@ -51,16 +53,19 @@
 
     margin-bottom: 24px;
     margin-left: 8px;
+
+    text-decoration: none;
+
     color: $color-light;
 
     font-size: 1.31rem;
-    text-decoration: none;
   }
 
   &__submit {
     border: 1px solid $color-light;
     border-radius: 0;
     background-color: $color-dark;
+
     font-size: 1.31rem;
     font-weight: 700;
   }
@@ -71,14 +76,9 @@
 legend {
   font-size: 1.31rem;
   font-weight: 500;
-  // margin-bottom: 17px;
-  // :not(:first-of-type) {
-  //   margin-top: 100px !important;
-  // }
 }
 .form-group {
   margin-bottom: 41px;
-  // font-size: 1.4rem;
 }
 fieldset:last-of-type {
   margin-bottom: 4px;

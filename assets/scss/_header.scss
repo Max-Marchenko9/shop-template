@@ -1,7 +1,7 @@
 .header {
   &__navbar {
     background-color: rgba($color-light, 0.8);
-    // color: $color-dark;
+
     @include md-min {
       .dropdown.show {
         background-color: $color-dark;
@@ -12,6 +12,7 @@
       }
       .dropdown-menu {
         margin-top: 1px;
+
         border: none;
         border-radius: 0;
         background-color: $color-dark;
@@ -24,46 +25,32 @@
           }
         }
       }
-      &__navbar-search {
-        height: 50px;
 
-        border: 1px solid $color-dark;
-
-        flex-wrap: nowrap;
-
-        @include sm {
-          display: inline-flex;
-
-          width: calc(100% - 100px);
-        }
-        
-        
-      }
-      
       .form-control {
-        background-color: transparent;
-        border-radius: 0;
-        box-shadow: none;
-        border-color: $color-border;
-        font-size: 1.2rem;
         padding-left: 18px;
 
-        &::placeholder {
+        border-color: $color-border;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
 
+        font-size: 1.2rem;
+
+        &::placeholder {
           color: $color-dark;
         }
-        @include lg-min {
+
+        @media (min-width: 992px) {
           width: 12.5rem !important;
           height: 40px;
         }
-        @include sm {
+        @media (max-width: 991px) {
           flex-grow: 2;
         }
       }
       button {
-        padding: 0px;
-        // margin: 5px;
-        // margin-right: -1px;
+        padding: 0;
+
         color: $color-light;
         border-color: $color-dark;
         background-color: $color-dark;
@@ -75,47 +62,65 @@
       }
       i {
         display: block;
+
         padding: 5px;
+
         font-size: 0.8rem;
       }
     }
   }
   &__carousel {
-    margin-left: 0px;
-    margin-right: 0px;
-    background-color: rgba(#000000, 0.3);
+    margin-right: 0;
+    margin-left: 0;
+
     border-bottom: 1px solid $color-light;
+    background-color: rgba(#000000, 0.3);
   }
 }
 .button-form {
-  position: absolute;
-  right: 5.1rem;
+  @include md-min {
+    position: absolute;
+    right: 5.1rem;
+  }
+  @include md {
+    width: 40px;
+    height: 43px;
+    margin-left: 0;
+    margin-left: 0;
+    padding: 2px;
+
+    color: $color-light;
+    background-color: $color-dark;
+  }
 }
 .header {
   &__cart-btn {
     position: relative;
+
     width: 40px;
     height: 40px;
     margin-left: 22px !important;
-    
+
     color: $color-dark;
     border: none;
     border-radius: 0;
     background-color: $color-light;
 
-    @include sm {
-      margin-top: -12px !important;
+    @include md {
+      width: 44px;
+      height: 44px;
+      margin-top: -7px !important;
+      margin-left: 0 !important;
     }
-    // &:focus,
-    // :active {
-    //   box-shadow: none !important;
-    // }
+    @include sm {
+      margin-top: 0 !important;
+    }
     &:hover {
       span {
         color: $color-light;
         background-color: $color-dark;
       }
-    } 
+    }
 
     span {
       position: absolute;
@@ -136,6 +141,8 @@
 
   &__cart-counter {
     display: none;
+
+    font-style: normal;
   }
 }
 .fa-shopping-cart {
@@ -150,11 +157,10 @@
   height: 100%;
 
   img {
-    height: 100%;
     width: auto !important;
+    height: 100%;
     margin: 0 auto;
   }
-  
 }
 .carousel-indicators {
   z-index: 100;
@@ -164,20 +170,43 @@
 }
 .btn-outline-success:focus {
   outline: none !important;
-   box-shadow: none;
+  box-shadow: none;
 }
 .nav-link {
-  font-size: 1.33rem;
   color: $color-dark !important;
-  // padding-left: 0px !important;
-  // padding-right: 0px !important;
+
+  font-size: 1.33rem;
 }
 .button-form {
-  height: 30px;
   width: 30px;
+  height: 30px;
   margin-right: 9px !important;
 }
 .navbar-logo {
   padding-top: 4px;
   padding-left: 1px;
+}
+.page-header__navbar-search {
+  @include md {
+    display: inline-flex;
+    flex-wrap: nowrap;
+
+    height: 50px;
+  }
+}
+.form-control {
+  @include md {
+    position: relative;
+
+    width: 40vw !important;
+    margin-right: 0 !important;
+    padding-left: 18px;
+
+    border-color: $color-border;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+
+    font-size: 1.2rem;
+  }
 }
